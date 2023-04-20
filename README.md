@@ -46,16 +46,5 @@ Once all the microservices are up and running,
     <img src = "https://user-images.githubusercontent.com/56164920/158070411-3dff479d-ee7f-4eeb-b38f-92ccc221c6aa.png"/>
 </p>
 
-## MongoDB CLI
-You can also play around with the Mongo CLI. Refer [Mongo Shell Guide](https://docs.mongodb.com/manual/reference/mongo-shell/)
-
-Login to the mongo shell and -
-
-1. Create a Database
-2. Insert a Collection
-3. Fill it with records
-
-Feel free to play around for brownie points!
-
 ## All Done! :)
 # UE20CS351-CC-PROJECT-BLOGGING-APP
