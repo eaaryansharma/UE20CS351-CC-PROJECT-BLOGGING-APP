@@ -30,25 +30,7 @@ The microservices architecture will deploy a Kubernetes cluster with a mongodb s
 ```
 The `app` directory contains all the code pertaining to the flask app. You are only required to configure the mongo connection string variables as specified in `app.py`.  
 The `flask-app-image.dockerfile` should specify the insructions to assemble the docker image for the flask app.  
-The `.yaml` files in the root directory are to specify the kubernetes manifests that will bring up your microservices deployment of the problem statement.
-
-## Task Breakdown/ Deliverables:
-1. MongoDB Server
-    1. Use the `mongo` image publicly available on DockerHub. Read through the configuration and other details of the image [here](https://hub.docker.com/_/mongo). Note down the necessary environment variables to be configured.
-    2. Create the `Deployment` for the mongodb server under `deployments.yaml`. Remember to configure the ports and setup the environment variables correctly.
-    3. Environment variables such as username, password, etc. are sensitive information and are defined as a `Secret`. Define a `secret.yaml` file to hold the sensitive information required by the mongodb server. You may create a secret _using a configuration file_ and use the secret in your deployment as _an environment variable_.  [Read more](https://newrelic.com/blog/how-to-relic/how-to-use-kubernetes-secrets).
-    4. Create a `Service` for the mongodb server under `services.yaml`.
-
-2. Mongo-Express Web Service
-    1. Use the `mongo-express` image. Note down the necessary environment variables like before from [here](https://hub.docker.com/_/mongo-express).
-    2. Define a `configMap` to store the mongodb server url. As above, use the configmap to configure the container with environment variables. [Read more](https://kubernetes.io/docs/concepts/configuration/configmap/).
-    3. Create a `Deployment` for the mongo-express service under `deployments.yaml` and configure the necessary ports and environment variables (drawn from the secret and configmap).
-    4. Also define a `service` for the pod under `services.yaml`.
-
-3.  Flask WebApp
-    1. Use the image created from the `flask-app-image.dockerfile`.
-    2. Create a `Deployment` for the flask app under `deployments.yaml`.
-    3. Also define a `Service` for the pod in `services.yaml`.  
+The `.yaml` files in the root directory are to specify the kubernetes manifests that will bring up your microservices deployment of the problem statement. 
 
 ## Bringing it all together
 Bring up all the microservices.
