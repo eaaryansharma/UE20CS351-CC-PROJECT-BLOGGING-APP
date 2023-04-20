@@ -28,8 +28,7 @@ The microservices architecture will deploy a Kubernetes cluster with a mongodb s
 |-- secret.yaml
 `-- services.yaml
 ```
-The `app` directory contains all the code pertaining to the flask app. You are only required to configure the mongo connection string variables as specified in `app.py`.  
-The `flask-app-image.dockerfile` should specify the insructions to assemble the docker image for the flask app.  
+The `app` directory contains all the code pertaining to the flask app. You are only required to configure the mongo connection string variables as specified in `app.py`.   
 The `.yaml` files in the root directory are to specify the kubernetes manifests that will bring up your microservices deployment of the problem statement. 
 
 ## Bringing it all together
