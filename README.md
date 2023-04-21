@@ -1,3 +1,12 @@
+## Team Members:
+```
+AARYAN SHARMA   PES1UG20CS003
+ABHISHEK        PES1UG20CS010
+ADITYA N        PES1UG20CS021
+ALOK KUMAR      PES1UG20CS032
+```
+
+
 ## Problem Statement
 Microservices are an architectural and organizational approach to software development where software is composed of small independent services that communicate over well-defined APIs. Microservices architectures make applications easier to scale and faster to develop, enabling innovation and accelerating time-to-market for new features.
 Docker and Kubernetes are almost synonymous to 'microservices' as they help package and manage the different components of a project/ application, thereby easing up the implementation of a microservices architecture.
@@ -37,7 +46,7 @@ Once all the microservices are up and running,
 1. Inside the flask-app pod, write and run a python script to insert records into the mongodb database. Insert into: database = 'blog' and collection = 'posts'.
 2. Run `app.py` inside the pod. Visit `http://localhost:<port>/` to view the Blog App. The Home Page should display the records inserted into the database in the previous step.
 <p align = "center">
-    <img src = "https://user-images.githubusercontent.com/56164920/158070358-d37498a4-1712-4048-bf19-3dfc86a214ef.png"/>
+    <img src = "https://user-images.githubusercontent.com/114352512/233695944-d5477d17-88a0-4735-afcf-91f130223a4d.jpg"/>
 </p>
 
 3. You can view the database frontend exposed by mongo-express. To do so, on your browser, navigate to`EXTERNAL_IP:port` exposed by the mongo-express service. Here is the sample output:  
