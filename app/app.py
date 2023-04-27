@@ -69,6 +69,11 @@ def deletePost():
     # redirect to home page
     return redirect("/")
 
+@app.route('/searchauthor/<author_name>')
+def postsByAuthor(author_name):
+    posti = list(db.posts.find({"author" : author_name}))
+    return render_template("searchauthor.html", homeIsActive=True, author=author_name, posts=posti)
+
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port="5001", debug=True)
