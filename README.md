@@ -30,7 +30,8 @@ The microservices architecture will deploy a Kubernetes cluster with a mongodb s
 |       |-- base.html
 |       |-- create-post.html
 |       |-- edit-post.html
-|       `-- home.html
+|       |-- home.html
+|       `-- searchauthor.html
 |-- configmap.yaml
 |-- deployments.yaml
 |-- flask-app-image.dockerfile
